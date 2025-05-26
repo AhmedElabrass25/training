@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.container {
+    position: relative;
+    gap: 60px;
+}
+
+.sec1 .box {
+    position: relative;
+    z-index: 10;
+}
+
+.sec2 .box {
+    position: absolute;
+    right: 110px;
+}
+
+.sec1 .box,
+.sec2 .box {
+    width: 50%;
+    height: 300px;
+    border-radius: 6px;
+    background-color: #111111;
+}
+
+.sec1 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.sec2 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.curve-small {
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 80px;
+    height: 110px;
+    background: gray;
+    border-radius: 0px 0px 100px 100px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.curve-large {
+    position: absolute;
+    bottom: -120px;
+    right: 0px;
+    width: 60px;
+    height: 200px;
+    background: #111111;
+    border-radius: 0 0 100px 100px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    z-index: 1;
+}
+
+
+/* ============================= */
